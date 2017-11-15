@@ -51,11 +51,11 @@
                 $(repos).each(function() {
                     if (this.name !== (username.toLowerCase()+'.github.com')) {
                         // language=HTML
-                        list.append('<div class = "card">' +
+                        list.append('<div style="border-top: 3px solid darkcyan;" class = "card">' +
                             '<div class = "card-content black-text">' +
                             '<dt class = "card-title"><a href="' + (this.homepage ? this.homepage : this.html_url) + '">' + this.name + '</a> ' +
                             '<em>' + (this.language ? ('(' + this.language + ')') : '') + '</em>' +
-                            '<span id="star">&nbsp;&#9733; ' + this.stargazers_count + ' </span></dt>' +
+                            '<span id="star">' + '<i class="material-icons">star_border</i>' + this.stargazers_count + ' </span></dt>' +
                             '<p class = "project-description">' + this.description + '</p>' +
                             '<p class = "project-use">' + 'Last Updated' + ': ' + this.updated_at + '</p>' +
                             '</div></div>');
@@ -80,27 +80,27 @@
 
 <body style="background-color:white">
 <header>
-    <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper blue-grey darken-4">
-            <a class="brand-logo center">Chris Risley</a>
-            <ul class="left hide-on-med-and-down">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="dlbs/Resume%20V3.pdf">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
+    <div class="navbar-fixed center">
+        <nav style="border-bottom: 5px solid #26A69A"  class="nav-extended center blue-grey darken-4">
+            <a style="font-size: 20px;" href="index.html">Chris Risley</a>
+        </nav>
+    </div>
+    <div class="nav-extended blue-grey darken-4 center">
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li style="width: 33%" class="tab  blue-grey darken-3"><a href="projects.html">Projects</a></li>
+                <li style="width: 33%" class="tab"><a href="index.html">Home</a></li>
+                <li style="width: 33%" class="tab"><a href="dlbs/Resume%20V3.pdf">Resume</a></li>
+
             </ul>
         </div>
-    </nav>
     </div>
+
 </header>
 
 <main>
     <!-- particles.js container -->
     <div style="float: left" id="particles-js">
-    </div>
-
-    <!-- particles.js container -->
-    <div style="float: right" id="particles-js-two">
     </div>
     <div style="margin-top: 3%;margin-bottom: 3%; align-content: center" class="container">
             <div id="github-projects"></div>
@@ -109,19 +109,22 @@
 
 <!--Footer-->
 
-<footer class="page-footer blue-grey darken-4">
+<footer style="border-top: 5px solid #26A69A" class="page-footer blue-grey darken-4">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
+
                 <h5 class="white-text">Contact Me</h5>
             </div>
             <ul style="display: inline-block; float: left">
                 <li style="float: left; margin-left: 20px;">
-                    <a href="https://www.facebook.com/risleychris" class="waves-effect waves-light btn-floating social facebook">
+                    <a href="https://www.facebook.com/risleychris"
+                       class="waves-effect waves-light btn-floating social facebook">
                         <i class="fa fa-facebook"></i></a>
                 </li>
                 <li style="float: left; margin-left: 20px;">
-                    <a href="mailto: risley.c@husky.neu.edu" class="waves-effect waves-light btn-floating social facebook">
+                    <a href="mailto: risley.c@husky.neu.edu"
+                       class="waves-effect waves-light btn-floating social facebook">
                         <i class="material-icons">email</i></a>
                 </li>
                 <li style="float: left; margin-left: 20px;">
@@ -129,10 +132,10 @@
                     <a href="https://www.linkedin.com/in/christopherrisley/"
                        class="waves-effect waves-light btn-floating social linkedin">
                         <i class="fa fa-linkedin"></i></a>
-                </li >
+                </li>
 
                 <li style="float: left; margin-left: 20px;">
-                    <a href="https://github.com/CrizR"class="waves-effect waves-light btn-floating social github">
+                    <a href="https://github.com/CrizR" class="waves-effect waves-light btn-floating social github">
                         <i class="fa fa-github"></i></a>
                 </li>
             </ul>
