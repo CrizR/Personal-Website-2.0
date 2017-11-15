@@ -8,7 +8,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106814101-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
         gtag('js', new Date());
 
         gtag('config', 'UA-106814101-1');
@@ -21,32 +24,41 @@
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 </head>
 
-<body style="background-color:white">
+<body style="width: 100%; height: 100%; background-size: cover; background: white">
+
 <header>
     <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper blue-grey darken-4">
-            <a class="brand-logo center">Chris Risley</a>
-            <ul class="left hide-on-med-and-down">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="dlbs/Resume%20V3.pdf">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </div>
-    </nav>
+        <nav>
+            <div class="nav-wrapper blue-grey darken-4">
+                <a class="brand-logo center">Chris Risley</a>
+                <ul class="left hide-on-med-and-down">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="dlbs/Resume%20V3.pdf">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </header>
 
 <main>
 
+    <!-- particles.js container -->
+    <div style="float: left" id="particles-js">
+    </div>
+
+    <!-- particles.js container -->
+    <div style="float: right" id="particles-js-two">
+    </div>
 
     <div style="margin-top: 3%;margin-bottom: 3%; align-content: center" class="container">
-
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-content black-text">
@@ -75,15 +87,18 @@
                 </div>
             </div>
         </div>
+
+
+
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-content black-text">
                     <span style="text-align: center" class="card-title"><b>Education</b></span>
-    <ul>
-        <li> <b>Northeastern University: Boston, MA</b></li>
-                   <li>College of Computer and Information Science</li>
-        <li> <i>Candidate for Bachelor of Science in Computer Science, expected. 2020</i></li>
-    </ul>
+                    <ul>
+                        <li><b>Northeastern University: Boston, MA</b></li>
+                        <li>College of Computer and Information Science</li>
+                        <li><i>Candidate for Bachelor of Science in Computer Science, expected. 2020</i></li>
+                    </ul>
 
                 </div>
             </div>
@@ -93,7 +108,7 @@
                 <div class="card-content black-text">
                     <span style="text-align: center" class="card-title"><b>Experience</b></span>
                     <h6><u><b>Inference Solutions</b></u>: San Francisco, CA | Software Developer Internship</h6>
-                    <h6 style ="float: right">Summer 2017</h6>
+                    <h6 style="float: right">Summer 2017</h6>
                     <ul>
 
                         <li>
@@ -115,7 +130,7 @@
                         </li>
                     </ul>
                     <h6><u><b>Architect Partners LLC</b></u>: Palo Alto, CA | Intern</h6>
-                    <h6 style ="float: right">Summer 2016</h6>
+                    <h6 style="float: right">Summer 2016</h6>
                     <ul>
                         <li>
                             • Optimized Salesforce contact upload process
@@ -174,49 +189,56 @@
                         producing music with a software called Ableton. At Northeastern, I'm a part
                         of the outdoor's club (NUHOC), ski club, and the rock climbing club. I'm hoping to get
                         into
-                        mountain biking if I have the time. My dream is to one day climb Denali. On a more technical side,
-                        I'm a huge support of blockchain and have recently been both trading and developing technology that interacts
+                        mountain biking if I have the time. My dream is to one day climb Denali. On a more technical
+                        side,
+                        I'm a huge support of blockchain and have recently been both trading and developing technology
+                        that interacts
                         with cryptocurrency.
                     </p>
 
                 </div>
             </div>
+
         </div>
 
     </div>
 
-    </div>
+
 </main>
 
 <!--Footer-->
+
 
 <footer class="page-footer blue-grey darken-4">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
+
                 <h5 class="white-text">Contact Me</h5>
             </div>
-                <ul style="display: inline-block; float: left">
-                    <li style="float: left; margin-left: 20px;">
-                        <a href="https://www.facebook.com/risleychris" class="waves-effect waves-light btn-floating social facebook">
-                            <i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li style="float: left; margin-left: 20px;">
-                        <a href="mailto: risley.c@husky.neu.edu" class="waves-effect waves-light btn-floating social facebook">
-                            <i class="material-icons">email</i></a>
-                    </li>
-                    <li style="float: left; margin-left: 20px;">
+            <ul style="display: inline-block; float: left">
+                <li style="float: left; margin-left: 20px;">
+                    <a href="https://www.facebook.com/risleychris"
+                       class="waves-effect waves-light btn-floating social facebook">
+                        <i class="fa fa-facebook"></i></a>
+                </li>
+                <li style="float: left; margin-left: 20px;">
+                    <a href="mailto: risley.c@husky.neu.edu"
+                       class="waves-effect waves-light btn-floating social facebook">
+                        <i class="material-icons">email</i></a>
+                </li>
+                <li style="float: left; margin-left: 20px;">
 
-                        <a href="https://www.linkedin.com/in/christopherrisley/"
-                           class="waves-effect waves-light btn-floating social linkedin">
-                            <i class="fa fa-linkedin"></i></a>
-                    </li >
+                    <a href="https://www.linkedin.com/in/christopherrisley/"
+                       class="waves-effect waves-light btn-floating social linkedin">
+                        <i class="fa fa-linkedin"></i></a>
+                </li>
 
-                    <li style="float: left; margin-left: 20px;">
-                        <a href="https://github.com/CrizR"class="waves-effect waves-light btn-floating social github">
-                            <i class="fa fa-github"></i></a>
-                    </li>
-                </ul>
+                <li style="float: left; margin-left: 20px;">
+                    <a href="https://github.com/CrizR" class="waves-effect waves-light btn-floating social github">
+                        <i class="fa fa-github"></i></a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="footer-copyright">
@@ -226,12 +248,15 @@
     </div>
 </footer>
 
+</body>
+
 
 <!--/.Footer-->
 
 <!-- SCRIPTS -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
 
 <!-- JQuery -->
 
-</body>
 </html>

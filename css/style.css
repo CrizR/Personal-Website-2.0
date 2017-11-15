@@ -1,0 +1,12 @@
+
+/* ---- particles.js container ---- */
+
+#particles-js, #particles-js-two{
+    width: 15%;
+    height: 150%;
+    position: relative;
+    z-index: 10;
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
