@@ -21,3 +21,11 @@
     padding: 10px;
     border-top: 4px solid darkcyan;
 }
+
+
+.company_logos {
+    width: 25px;
+    height: 22px;
+    margin-right: 3px;
+    background: white;
+}
