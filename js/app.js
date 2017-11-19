@@ -16,10 +16,10 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 75,
+        "value": 100,
         "density": {
           "enable": true,
-          "value_area": 500
+          "value_area": 400
         }
       },
       "color": {
@@ -55,7 +55,7 @@ particlesJS('particles-js',
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 1,
           "size_min": 0.1,
           "sync": false
         }
@@ -64,12 +64,12 @@ particlesJS('particles-js',
         "enable": true,
         "distance": 150,
         "color": "#000000",
-        "opacity": 0.5,
+        "opacity": 0.1,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -86,7 +86,7 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
@@ -103,10 +103,10 @@ particlesJS('particles-js',
         },
         "bubble": {
           "distance": 100,
-          "size": 40,
+          "size": 3,
           "duration": 2,
-          "opacity": 8,
-          "speed": 2
+          "opacity": 1,
+          "speed": 1
         },
         "repulse": {
           "distance": 100
