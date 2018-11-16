@@ -16,10 +16,7 @@
 #avatar {
     width: 125px;
     height: 210px;
-    position: relative;
-    background: white;
-    padding: 10px;
-    border-top: 4px solid darkcyan;
+
 }
 
 
@@ -28,4 +25,62 @@
     height: 22px;
     margin-right: 3px;
     background: white;
+}
+
+footer {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index: 100;
+}
+
+.invisible_card {
+    margin: 100px 200px 50px;
+    padding-bottom: 1%;
+    border-radius: 50px;
+    background: white;
+}
+
+
+.spec-container {
+    margin: 100px 300px 50px;
+    border-radius: 50px;
+    background: white;
+}
+
+.slider {
+    border-radius: 50px;
+}
+
+.slides {
+    border-radius: 50px;
+}
+
+.slider .slides li .caption {
+    color: black;
+}
+
+.slider .slides li:hover{
+    background: white;
+    border-radius: 25px;
+}
+
+
+.slider .slides li .caption p {
+    color: black;
+}
+
+.slider .slides li img {
+    margin-top: 50px;
+    width: 15%;
+    height: 10%;
+}
+
+.slider .slides li a {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
 }
