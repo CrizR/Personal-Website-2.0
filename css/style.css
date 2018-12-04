@@ -30,7 +30,6 @@
 footer {
     background-color: #F3F3F3;
     padding-top: 10px;
-    padding-bottom: 0px;
     position:fixed;
     bottom:0;
     width:100%;
@@ -38,15 +37,35 @@ footer {
 }
 
 .invisible_card {
-    margin: 100px 200px 50px;
+    margin: 100px 50px 50px;
     padding-bottom: 1%;
     border-radius: 50px;
     background: white;
 }
 
+@media only screen and (min-width: 1500px) {
+    .invisible_card {
+        margin: 100px 50px 50px;
+        padding-bottom: 1%;
+        border-radius: 50px;
+        background: white;
+        width: 1000px;
+        display: inline-block;
+    }
+
+    .spec-container {
+        margin: 100px 100px 50px;
+        border-radius: 50px;
+        background: white;
+        width: 800px;
+        display: inline-block;
+    }
+
+}
+
 
 .spec-container {
-    margin: 100px 300px 50px;
+    margin: 100px 100px 50px;
     border-radius: 50px;
     background: white;
 }
