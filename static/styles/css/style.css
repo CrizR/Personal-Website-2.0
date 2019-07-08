@@ -1,0 +1,105 @@
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+
+#avatar {
+    width: 125px;
+    height: 210px;
+
+}
+
+
+.company_logos {
+    width: 25px;
+    height: 22px;
+    margin-right: 3px;
+    background: white;
+}
+
+footer {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index: 100;
+}
+
+.invisible_card {
+    margin: 100px 50px 50px;
+    padding-bottom: 1%;
+    border-radius: 50px;
+    background: white;
+}
+
+@media only screen and (min-width: 1500px) {
+    .invisible_card {
+        margin: 100px 50px 50px;
+        padding-bottom: 1%;
+        border-radius: 50px;
+        background: white;
+        width: 1000px;
+        display: inline-block;
+    }
+
+    .spec-container {
+        margin: 100px 100px 50px;
+        border-radius: 50px;
+        background: white;
+        width: 800px;
+        display: inline-block;
+    }
+
+}
+
+
+.spec-container {
+    margin: 100px 100px 50px;
+    border-radius: 50px;
+    background: white;
+}
+
+.slider {
+    border-radius: 50px;
+}
+
+.slides {
+    border-radius: 50px;
+}
+
+.slider .slides li .caption {
+    color: black;
+}
+
+.slider .slides li:hover{
+    background: white;
+    border-radius: 25px;
+}
+
+
+.slider .slides li .caption p {
+    color: black;
+}
+
+.slider .slides li img {
+    margin-top: 50px;
+    width: 15%;
+    height: 10%;
+}
+
+.slider .slides li a {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+}
